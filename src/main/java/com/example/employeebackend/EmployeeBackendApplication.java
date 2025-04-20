@@ -29,8 +29,15 @@ public class EmployeeBackendApplication {
                     .email("sarahjane@gmail.com")
                     .build();
 
+            Employee employee3 = Employee.builder()
+                    .firstname("michael")
+                    .lastname("whatever")
+                    .email("michaelwhatever@gmail.com")
+                    .build();
+
             employeeService.addEmployee(employee1);
             employeeService.addEmployee(employee2);
+            employeeService.addEmployee(employee3);
 
             System.out.println("Data seeded successfully!");
         };
